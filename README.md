@@ -1,4 +1,3 @@
-
 # 🌾 FarmConnect+
 
 **FarmConnect+** is a global platform that empowers farmers by directly connecting them with local and international markets. By leveraging technology, FarmConnect+ aims to improve market access, reduce exploitation, and create sustainable agricultural trade networks worldwide.
@@ -32,11 +31,11 @@ Millions of farmers around the world face challenges in reaching the right buyer
 
 | Layer      | Technology                             |
 | ---------- | -------------------------------------- |
-| Frontend   | HTML, CSS, JavaScript                  |
+| Frontend   | React + TailwindCSS                    |
 | Backend    | Django (Python)                        |
-| Database   | MySQL                                  |
+| Database   | PostgreSQL                             |
 | API Layer  | Django REST Framework                  |
-| Deployment | Docker / Gunicorn / Nginx              |
+| Deployment | Docker                                |
 | Hosting    | DigitalOcean / Heroku / AWS (Optional) |
 
 ---
@@ -46,7 +45,7 @@ Millions of farmers around the world face challenges in reaching the right buyer
 ### ✅ Prerequisites
 
 * Python 3.9+
-* MySQL Server
+* PostgreSQL Server
 * pip, virtualenv
 * Git
 
@@ -77,12 +76,12 @@ Create a `.env` file or edit `settings.py` with your MySQL database credentials:
 ```python
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgres',
         'NAME': 'farmconnect_db',
         'USER': 'farmconnectplusadmin',
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 ```
@@ -156,9 +155,6 @@ We welcome contributions from developers, designers, and agriculture experts.
 
 * 📧 Email: [hakusilas@gmail.com](mailto:hakusilas@gmail.com)
 
-
 ---
 
 ## 🌱 *Empowering Farmers. Connecting Markets. Feeding the World.*
-
-
